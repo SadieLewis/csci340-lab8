@@ -32,6 +32,8 @@ footer{
   background-color: #ff5454;
   border-color: #000000;
   border-width: 5px;
+  font-style: italic;
+  text-decoration-color: #ffffff;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
