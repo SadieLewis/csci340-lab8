@@ -26,23 +26,23 @@ namespace RazorPagesMovie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Genre")
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal>("DexNum")
                         .HasColumnType("decimal(18, 2)");
 
-                    b.Property<string>("Rating")
+                    b.Property<string>("Gender")
                         .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("CatchDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(60)
                         .HasColumnType("TEXT");

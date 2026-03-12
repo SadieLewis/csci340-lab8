@@ -25,38 +25,38 @@ public static class SeedData
             context.Movie.AddRange(
                 new Movie
                 {
-                    Title = "When Harry Met Sally",
-                    ReleaseDate = DateTime.Parse("1989-2-12"),
-                    Genre = "Romantic Comedy",
-                    Price = 7.99M,
-                    Rating = "R"
+                    Name = "Bulbasaur",
+                    CatchDate = DateTime.Parse("2010-2-12"),
+                    Type = "Grass",
+                    DexNum = 0001,
+                    Gender = "F"
                 },
 
                 new Movie
                 {
-                    Title = "Ghostbusters ",
-                    ReleaseDate = DateTime.Parse("1984-3-13"),
-                    Genre = "Comedy",
-                    Price = 8.99M,
-                    Rating = "G"
+                    Name = "Eevee",
+                    CatchDate = DateTime.Parse("2013-12-5"),
+                    Type = "Normal",
+                    DexNum = 0133,
+                    Gender = "M"
                 },
 
                 new Movie
                 {
-                    Title = "Ghostbusters 2",
-                    ReleaseDate = DateTime.Parse("1986-2-23"),
-                    Genre = "Comedy",
-                    Price = 9.99M,
-                    Rating = "G"
+                    Name = "Noibat",
+                    CatchDate = DateTime.Parse("2019-8-15"),
+                    Type = "Dark",
+                    DexNum = 0714,
+                    Gender = "M"
                 },
 
                 new Movie
                 {
-                    Title = "Rio Bravo",
-                    ReleaseDate = DateTime.Parse("1959-4-15"),
-                    Genre = "Western",
-                    Price = 3.99M,
-                    Rating = "NA"
+                    Name = "Cosmog",
+                    CatchDate = DateTime.Parse("2026-6-12"),
+                    Type = "Psychic",
+                    DexNum = 0789,
+                    Gender = "F"
                 }
             );
             context.SaveChanges();

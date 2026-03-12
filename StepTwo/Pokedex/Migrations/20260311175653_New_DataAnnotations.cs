@@ -11,7 +11,7 @@ namespace RazorPagesMovie.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Genre",
+                name: "Type",
                 table: "Movie",
                 type: "TEXT",
                 maxLength: 30,
@@ -26,7 +26,7 @@ namespace RazorPagesMovie.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Genre",
+                name: "Type",
                 table: "Movie",
                 type: "TEXT",
                 nullable: true,

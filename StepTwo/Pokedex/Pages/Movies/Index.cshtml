@@ -8,14 +8,14 @@
 <h1>Log a Pokemon</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">New Addition</a>
 </p>
 <form>
     <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
+        <select asp-for="MovieType" asp-items="Model.Types">
             <option value="">All</option>
         </select>
-        <label>Title: <input type="text" asp-for="SearchString" /></label>
+        <label>Pokemon Name: <input type="text" asp-for="SearchString" /></label>
         <input type="submit" value="Filter" />
     </p>
 </form>
@@ -23,19 +23,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Title)
+                @Html.DisplayNameFor(model => model.Movie[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+                @Html.DisplayNameFor(model => model.Movie[0].CatchDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Genre)
+                @Html.DisplayNameFor(model => model.Movie[0].Type)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Price)
+                @Html.DisplayNameFor(model => model.Movie[0].DexNum)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Rating)
+                @Html.DisplayNameFor(model => model.Movie[0].Gender)
             </th>
             <th></th>
         </tr>
@@ -44,24 +44,24 @@
 @foreach (var item in Model.Movie) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
+                @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
+                @Html.DisplayFor(modelItem => item.CatchDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Genre)
+                @Html.DisplayFor(modelItem => item.Type)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                @Html.DisplayFor(modelItem => item.DexNum)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Rating)
+                @Html.DisplayFor(modelItem => item.Gender)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Delete" asp-route-id="@item.Id">Release</a>
             </td>
         </tr>
 }

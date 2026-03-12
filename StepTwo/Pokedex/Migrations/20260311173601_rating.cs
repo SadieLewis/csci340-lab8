@@ -5,13 +5,13 @@
 namespace RazorPagesMovie.Migrations
 {
     /// <inheritdoc />
-    public partial class rating : Migration
+    public partial class gender : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Title",
+                name: "Name",
                 table: "Movie",
                 type: "TEXT",
                 nullable: false,
@@ -21,7 +21,7 @@ namespace RazorPagesMovie.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<decimal>(
-                name: "Price",
+                name: "DexNum",
                 table: "Movie",
                 type: "decimal(18, 2)",
                 nullable: false,
@@ -29,7 +29,7 @@ namespace RazorPagesMovie.Migrations
                 oldType: "TEXT");
 
             migrationBuilder.AddColumn<string>(
-                name: "Rating",
+                name: "Gender",
                 table: "Movie",
                 type: "TEXT",
                 nullable: false,
@@ -40,11 +40,11 @@ namespace RazorPagesMovie.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Rating",
+                name: "Gender",
                 table: "Movie");
 
             migrationBuilder.AlterColumn<string>(
-                name: "Title",
+                name: "Name",
                 table: "Movie",
                 type: "TEXT",
                 nullable: true,
@@ -52,7 +52,7 @@ namespace RazorPagesMovie.Migrations
                 oldType: "TEXT");
 
             migrationBuilder.AlterColumn<decimal>(
-                name: "Price",
+                name: "DexNum",
                 table: "Movie",
                 type: "TEXT",
                 nullable: false,
